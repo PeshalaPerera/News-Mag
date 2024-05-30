@@ -2,7 +2,8 @@
 
 News-Mag is a modern news magazine web application built with React and Vite. It provides a fast and efficient development environment, with a focus on performance and code quality.
 
-![image](https://github.com/PeshalaPerera/News-Mag/assets/78086607/cc5faaf6-e3ae-4e13-a1fd-5f983c8ecd63)
+![image](https://github.com/PeshalaPerera/News-Mag/assets/78086607/6898f93e-f9bc-4efe-b372-ad0e61f85e2c)
+
 
 ## Features
 
