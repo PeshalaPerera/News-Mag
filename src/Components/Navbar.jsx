@@ -1,9 +1,9 @@
-const Navbar = () => {
+const Navbar = ({ setCategory }) => {
   return (
     <nav className="navbar navbar-expand-lg bg-info-subtle">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Navbar
+          <span className="badge bg-secondary text-light fs-4">NewsMag</span>
         </a>
         <button
           className="navbar-toggler"
@@ -19,45 +19,64 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <div
+                className="nav-link"
+                onClick={() => {
+                  setCategory("technology");
+                }}
               >
-                Dropdown
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
+                Technology
+              </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
+              <div
+                className="nav-link"
+                onClick={() => {
+                  setCategory("business");
+                }}
+              >
+                Business
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onClick={() => {
+                  setCategory("health");
+                }}
+              >
+                Health
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onClick={() => {
+                  setCategory("science");
+                }}
+              >
+                Science
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onClick={() => {
+                  setCategory("sports");
+                }}
+              >
+                Sports
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onClick={() => {
+                  setCategory("entertaintment");
+                }}
+              >
+                Entertaintment
+              </div>
             </li>
           </ul>
           <form className="d-flex" role="search">
